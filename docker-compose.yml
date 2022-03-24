@@ -45,5 +45,5 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
-      - ${PWD}/learnright-mysql/src/main/mysql/init:/docker-entrypoint-initdb.d
-      - ${PWD}/learnright-mysql/data:/var/lib/mysql
+      - ${PWD}/mysql/src/main/mysql/init:/docker-entrypoint-initdb.d
+      - ${PWD}/mysql/data:/var/lib/mysql
